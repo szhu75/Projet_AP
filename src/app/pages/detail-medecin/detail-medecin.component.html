@@ -1,0 +1,10 @@
+<div>
+    <h1>Détails du Médecin</h1>
+    <p>ID du médecin: {{ id }}</p>
+    <div *ngIf="medecin">
+      <p>Nom: {{ medecin.nom }}</p>
+      <p>Prénom: {{ medecin.prenom }}</p>
+      <p>Spécialité: {{ medecin.specialite }}</p>
+      <!-- Ajoutez ici les autres informations du médecin -->
+    </div>
+  </div>
