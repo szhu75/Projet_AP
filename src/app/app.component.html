@@ -6,19 +6,21 @@
   }
 </div> -->
 
-<h1>Liste des médecins</h1>
-<!-- <form class="filter" (ngSubmit)="searchDoctor()">
+<router-outlet></router-outlet>
+
+<!-- <h1>Liste des médecins</h1>
+<form class="filter" (ngSubmit)="searchDoctor()">
   <input type="search" [formControl]="searchDoctorControl">
   <button type="submit">Rechercher</button>
-</form> -->
+</form>
 
-<!-- <app-filters (searchDoctor)="searchDoctor($event)"></app-filters>
+<app-filters (searchDoctor)="searchDoctor($event)"></app-filters>
 
 <h4>{{ filteredMedecins.length }} résultat(s) </h4>
 <div class="doctors">
   @for (medecin of filteredMedecins; track $index) {
     <app-doctor [doctor]="medecin"></app-doctor>
   }
-</div>  -->
+</div> -->
 
-<router-outlet></router-outlet>
+

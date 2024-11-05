@@ -20,6 +20,8 @@ export class AppComponent implements OnInit {
   
   medecins!: Medecin[]; 
   filteredMedecins!: Medecin[]; 
+  searchDoctorControl!: FormControl<any>;
+  title: any;
 
   ngOnInit(): void {
     this.doctorsService.getDoctors()

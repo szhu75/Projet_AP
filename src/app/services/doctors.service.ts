@@ -14,9 +14,11 @@ export class DoctorsService {
     return this.httpClient.get<Medecin[]>('http://localhost:8080/restGSB/medecins?nom=');
   }
 
-  getMedecinById(id: string): Observable<Medecin> {
-    return this.httpClient.get<Medecin>(`http://localhost:8080/restGSB/medecins/${id}`);
+  getMedecinById(id: number): Observable<Medecin> {
+    return this.httpClient.get<Medecin>(`http://localhost:8080/restGSB/medecin/${id}`);
   }
 
 }
+
+
 
